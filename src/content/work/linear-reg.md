@@ -11,7 +11,6 @@ tags:
   - Artificial Intelligence
 link: https://github.com/AayushGithub/LinearRegressionWebApp
 ---
-
 # LinearRegressionWebApp
 
 This is a Linear Regression Application for EN.601.464/664

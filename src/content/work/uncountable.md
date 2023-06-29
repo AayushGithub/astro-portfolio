@@ -11,7 +11,6 @@ tags:
   - Python
 link: https://github.com/AayushGithub/uncountable-dashboard
 ---
-
 ### This is the submission for the take home assignment for Aayush Gandhi
 
 The dataset is stored in **Uncountable Front End Dataset.json**, labelled as data.json internally. The dataset is a json dictionary with the outer keys being the name of the experiment, and containing information of their date. For each experiment there are two dictionaries “inputs” and “outputs” which have the actual data for each experiment.

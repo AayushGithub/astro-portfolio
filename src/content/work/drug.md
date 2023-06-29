@@ -12,7 +12,6 @@ tags:
   - Data Analytics
 link: https://symposium.foragerone.com/dreams-fall-2022/presentations/49268
 ---
-
 ## Title:
 
 Drug Eluting Device involving the use of ultra-thin, high strength, antibiotic-eluting sutures for prevention

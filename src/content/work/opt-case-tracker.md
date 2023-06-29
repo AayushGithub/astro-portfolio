@@ -11,7 +11,6 @@ tags:
   - Research
 link: https://github.com/AayushGithub/OPT-Case-Tracker
 ---
-
 # OPT Case Tracker
 
 #### Track your OPT case status with Python. Scrape USCIS website, get real-time updates.
