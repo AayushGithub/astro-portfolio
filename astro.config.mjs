@@ -1,13 +1,22 @@
-import { defineConfig } from 'astro/config';
-import vercelStatic from '@astrojs/vercel/static';
+import { defineConfig } from "astro/config";
+import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
-
 import prefetch from "@astrojs/prefetch";
+
+import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'static',
+  output: "static",
   adapter: vercelStatic(),
-  integrations: [sitemap(), prefetch()],
-  site: 'https://aayushgandhi.com'
+  integrations: [
+    sitemap(),
+    prefetch(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+  ],
+  site: "https://aayushgandhi.com",
 });
