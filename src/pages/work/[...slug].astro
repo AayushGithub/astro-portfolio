@@ -97,8 +97,11 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 105ch;
+		max-width: 90%;
+		overflow-wrap: break-word;
 		margin-inline: auto;
+		/* If screen is too narrow, reduce font size */
+		font-size: clamp(1rem, 1.5vw, 1.25rem);
 	}
 
 	.content > :global(* + *) {
@@ -168,6 +171,10 @@ const { Content } = await entry.render();
 		width:20%;
 		/* center on page */
 		margin: 0 auto;
+		@media (max-width: 50em) {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 	
 

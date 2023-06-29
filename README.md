@@ -51,3 +51,7 @@ All commands are run from the root of the project, from a terminal:
 ## Acknowledgments
 
 Special thanks to the creators of Astro JS for providing an excellent framework for building static websites with dynamic components.
+
+## Performance
+
+![Lighthouse Performance](./public/assets/lighthouse.png)
