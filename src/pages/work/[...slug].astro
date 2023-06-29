@@ -7,6 +7,7 @@ import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
 import Icon from '../../components/Icon.astro';
 import Pill from '../../components/Pill.astro';
+import CallToAction from '../../components/CallToAction.astro';
 
 interface Props {
 	entry: CollectionEntry<'work'>;
@@ -35,10 +36,19 @@ const { Content } = await entry.render();
 					<a class="back-link" href="/work/"><Icon icon="arrow-left" /> Work</a>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">
+							<div class="left-title">
+								{entry.data.link &&
+									<CallToAction
+										href={entry.data.link}
+									>
+										{'View Project'}
+									</CallToAction>
+								}
+								</div>
+							<p class="description">{entry.data.description}</p>
 							<div class="tags">
 								{entry.data.tags.map((t) => <Pill>{t}</Pill>)}
 							</div>
-							<p class="description">{entry.data.description}</p>
 						</div>
 					</Hero>
 				</div>
@@ -78,6 +88,7 @@ const { Content } = await entry.render();
 	.tags {
 		display: flex;
 		gap: 0.5rem;
+		flex-wrap: wrap;
 	}
 
 	.description {
@@ -86,7 +97,7 @@ const { Content } = await entry.render();
 	}
 
 	.content {
-		max-width: 65ch;
+		max-width: 105ch;
 		margin-inline: auto;
 	}
 
@@ -148,4 +159,16 @@ const { Content } = await entry.render();
 			font-size: var(--text-2xl);
 		}
 	}
+
+	.left-title {
+		/* This should be to the left of the title, above description */
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width:20%;
+		/* center on page */
+		margin: 0 auto;
+	}
+	
+
 </style>

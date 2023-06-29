@@ -5,19 +5,38 @@ import Icon from './Icon.astro';
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+		<h2>Software Development and Security Protocols</h2>
+		<p>During my internship at CraniUS LLC, I developed and implemented automated scanning tools to 
+			identify software vulnerabilities, resulting in the discovery of critical and high CVSS score 
+			vulnerabilities. I also possess two provisional patents for my innovative work in medical device 
+			communication and security protocols. With expertise in secure connections, payload delivery, and 
+			integrating software into CI/CD processes, I have a strong foundation in software development and 
+			security protocols.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
+		<h2>Research and Development</h2>
+		<p>As an Undergraduate Research Assistant at the Centre For Nanomedicine, 
+			I contributed to the development of antibiotic-eluting sutures, conducting 
+			trials to improve their characteristics. Additionally, I possess two provisional 
+			patents for my innovative work in the field of medical device communication and security 
+			protocols. I also played a key role in creating a portable version of the Humphrey visual 
+			field analyzer test, collaborating with medical professionals for validation. With my 
+			research and development skills in biomedical engineering, I have the ability to innovate and adapt in the field.</p>
 	</div>
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
-	</div>
+		<h2>Web Development, Marketing, and SEO</h2>
+		<p>
+			During my internships at Incoggo and SurvivingBreastCancer.org Inc., 
+			I excelled in web development, marketing, and SEO. I completed website 
+			landing pages with animations and database design, while also implementing sales 
+			optimization strategies resulting in lead generation and successful outreach campaigns. 
+			I possess two provisional patents for my innovative work in medical device communication and 
+			security protocols. By implementing SEO infrastructure, I improved page indexing visibility and load time. 
+			My diverse skill set in web development, marketing, and SEO enables me to enhance online presence and user experience.
+		</p>
+			</div>
 </section>
 
 <style>
@@ -41,6 +60,12 @@ import Icon from './Icon.astro';
 
 	.skills p {
 		color: var(--gray-400);
+		/* center contents */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
 	}
 
 	@media (min-width: 50em) {
