@@ -1,16 +1,39 @@
-# Astro Starter Kit: Portfolio
+# Personal Portfolio Website with Astro
 
-```
-npm create astro@latest -- --template portfolio
-```
+## Description
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
+This project is a personal portfolio website built using the Astro JS framework. The website showcases my skills, projects, and experiences in a visually appealing and user-friendly manner. With Astro JS, a modern front-end framework, I could create static websites with dynamic components, enabling a faster and more efficient development process.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Features
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+- **Responsive Design:** The portfolio website is designed to be fully responsive, ensuring optimal viewing experience across various devices and screen sizes.
+
+- **Dynamic Components:** Astro JS allowed me to incorporate dynamic components into my static website, enhancing its interactivity and functionality.
+
+- **Project Showcase:** Display my projects with detailed descriptions, images, and links to their live demos or repositories.
+
+- **Skills and Expertise:** Highlighting my skills and expertise, presenting them in an organized and visually appealing manner.
+
+- **About Me:** Providing an introduction about myself, my background, and my career goals, giving visitors an insight into my personality and aspirations.
+
+- **Contact Information:** Includes my contact information, such as email address, social media profiles, and professional networks, allowing visitors to reach out to you easily.
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/AayushGithub/astro-portfolio`
+2. Navigate to the project directory: `cd astro-portfolio`
+3. Install dependencies: `npm install`
+
+## Usage
+
+1. Customize the content: Replace the default content with your own projects, skills, and information in the appropriate files.
+2. Customize the styling: Modify the CSS files to match your desired visual style.
+3. Build the website: Run the following command: `npm run build`
+4. Deploy the website: Upload the generated files in the `dist` directory to your web server or hosting platform.
+
+## Credits
+
+This portfolio website is developed by [Aayush Gandhi](https://github.com/AayushGithub).
 
 ## 🧞 Commands
 
@@ -25,6 +48,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## Acknowledgments
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Special thanks to the creators of Astro JS for providing an excellent framework for building static websites with dynamic components.
