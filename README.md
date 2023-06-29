@@ -1,5 +1,7 @@
 # Personal Portfolio Website with Astro
 
+[![Vercel Production Deployment](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml) <img src="https://therealsujitk-vercel-badge.vercel.app/?app=aayushgandhi" /> ![License](https://img.shields.io/badge/license-MIT-blue)
+
 ## Description
 
 This project is a personal portfolio website built using the Astro JS framework. The website showcases my skills, projects, and experiences in a visually appealing and user-friendly manner. With Astro JS, a modern front-end framework, I could create static websites with dynamic components, enabling a faster and more efficient development process.
