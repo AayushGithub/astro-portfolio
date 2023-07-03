@@ -27,44 +27,6 @@ const projects = (await getCollection("work"))
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
-const GithubAPIToken = import.meta.env.GITHUB_API_TOKEN;
-
-// Make an object where the items are the maps of the repos
-type Repo = {
-	name: string;
-	html_url: string;
-	description: string;
-	created_at: string;
-};
-
-const GitHubRepos: Repo[] = await fetch(
-	"https://api.github.com/users/AayushGithub/repos",
-	{
-		headers: {
-			Authorization: `token ${GithubAPIToken}`,
-		},
-	}
-)
-	.then((res) => res.json())
-	.then((data) =>
-		data.map((repo: Repo) => ({
-			name: repo.name,
-			html_url: repo.html_url,
-			description: repo.description,
-			create_at: repo.created_at,
-		}))
-	)
-	// sort by most recently created and take the first 8
-	.then((repos) =>
-		repos
-			.sort(
-				(a: any, b: any) =>
-					new Date(b.create_at).valueOf() -
-					new Date(a.create_at).valueOf()
-			)
-			.slice(0, 8)
-	);
-
 ---
 
 <BaseLayout>
@@ -159,7 +121,7 @@ const GitHubRepos: Repo[] = await fetch(
 						</p>
 					</a>
 				</header>
-					<div class="gallery">
+					<!-- <div class="gallery">
 						<Grid variant="small">
 							{
 								GitHubRepos.map((repo) => (
@@ -177,7 +139,7 @@ const GitHubRepos: Repo[] = await fetch(
 														"transform 0.2s ease-in-out",
 												}}
 												onmousedown="this.style.transform = 'scale(0.95)'"
-																								onmouseup="this.style.transform = 'scale(1)'"
+												onmouseup="this.style.transform = 'scale(1)'"
 											>
 												<p>{repo.name}</p>
 											</div>
@@ -186,8 +148,7 @@ const GitHubRepos: Repo[] = await fetch(
 								))
 							}
 						</Grid>
-					</div>
-				</header>
+					</div> -->
 			</section>
 
 			<ContactCTA />
