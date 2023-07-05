@@ -8,7 +8,10 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  adapter: vercelStatic(),
+  adapter: vercelStatic({
+    analytics: true,
+    imageService: true,
+  }),
   integrations: [
     sitemap(),
     prefetch(),
