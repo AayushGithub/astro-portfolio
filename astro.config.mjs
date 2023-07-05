@@ -10,7 +10,6 @@ export default defineConfig({
   output: "static",
   adapter: vercelStatic({
     analytics: true,
-    imageService: true,
   }),
   integrations: [
     sitemap(),
