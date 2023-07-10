@@ -9,7 +9,7 @@ tags:
   - Threads.net
   - NodeJS
   - Vercel
-link: [https://diffeqportfolio.netlify.app/](https://github.com/AayushGithub/threads-projects)
+link: https://github.com/AayushGithub/threads-projects
 ---
 # Projects With Meta's Threads.net
 
