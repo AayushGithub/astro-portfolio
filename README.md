@@ -1,6 +1,6 @@
 # Personal Portfolio Website with Astro
 
-[![Vercel Production Deployment](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml) <img src="https://therealsujitk-vercel-badge.vercel.app/?app=aayushgandhi" /> ![License](https://img.shields.io/badge/license-MIT-blue)
+[![Vercel Production Deployment](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/AayushGithub/astro-portfolio/actions/workflows/deploy.yml) <img src="https://therealsujitk-vercel-badge.vercel.app/?app=aayushgandhi" /> ![License](https://img.shields.io/badge/license-MIT-blue) ![](https://api.checklyhq.com/v1/badges/checks/180c3c1f-4706-4aac-9498-1010753f696d?style=flat&theme=dark)
 
 ## Description
 
