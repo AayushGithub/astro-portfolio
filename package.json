@@ -19,6 +19,7 @@
     "@react-pdf/renderer": "^3.1.12",
     "astro": "^2.7.1",
     "astro-icon": "^0.8.1",
+    "astro-link-preview": "^0.3.4",
     "graphql": "^16.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

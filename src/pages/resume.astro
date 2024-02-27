@@ -3,8 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
 import Hero from "../components/Hero.astro";
-import Pill from '../components/Pill.astro';
-import CallToAction from '../components/CallToAction.astro';
+import Pill from "../components/Pill.astro";
+import CallToAction from "../components/CallToAction.astro";
 ---
 
 <BaseLayout
@@ -13,22 +13,23 @@ import CallToAction from '../components/CallToAction.astro';
 >
 	<div class="stack gap-20">
 		<main class="wrapper about">
-			<Hero
-				title="Resume"
-			>
-			<div class="download">
-				<a href="/resume.pdf" download rel="prefetch">
-					Download Resume
-				</a>
-			</div>
-			<!-- Add a centered pill button with centered text to a download link -->
-				<iframe src="/resume.pdf" width="100%" height="873" style="margin-top: 1.5rem; box-shadow: var(--shadow-md);">
-					<p>
-						<a href="/resume.pdf" rel="prefetch">Download Resume</a>
+			<Hero title="Resume">
+				<div class="download">
+					<a href="/AGR.pdf" download rel="prefetch">
+						Download Resume
+					</a>
+				</div>
+				<!-- Add a centered pill button with centered text to a download link -->
+				<iframe
+					src="/AGR.pdf"
+					width="100%"
+					height="873"
+					style="margin-top: 1.5rem; box-shadow: var(--shadow-md);"
+				>
+					<p> <a href="/AGR.pdf" rel="prefetch">Download Resume</a>
 					</p>
 				</iframe>
 			</Hero>
-
 		</main>
 
 		<ContactCTA />
@@ -121,7 +122,7 @@ import CallToAction from '../components/CallToAction.astro';
 
 	/* Overlay for hover effects. */
 	a::after {
-		content: '';
+		content: "";
 		position: absolute;
 		inset: 0;
 		pointer-events: none;
