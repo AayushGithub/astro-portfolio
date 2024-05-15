@@ -6,6 +6,7 @@
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 
 interface Props {
 	title?: string | undefined;
@@ -14,7 +15,6 @@ interface Props {
 
 const { title, description } = Astro.props;
 ---
-
 <html lang="en">
 	<head>
 		<MainHead title={title} description={description} />
@@ -112,3 +112,4 @@ const { title, description } = Astro.props;
 		</style>
 	</body>
 </html>
+<SpeedInsights />
