@@ -9,7 +9,7 @@ import CallToAction from "../components/CallToAction.astro";
 import Grid from "../components/Grid.astro";
 import Hero from "../components/Hero.astro";
 import CustomIcon from "../components/Icon.astro";
-import { Icon } from "astro-icon";
+import { Icon } from "astro-icon/components";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 
@@ -44,15 +44,13 @@ const projects = (await getCollection("work"))
 						</Pill>
 						<Pill>
 							<Icon
-								pack="ph"
-								name="magnifying-glass-duotone"
+								name="ph:magnifying-glass-duotone"
 								size="1.33em"
 							/> Researcher
 						</Pill>
 						<Pill>
 							<Icon
-								pack="mdi"
-								name="head-lightbulb-outline"
+								name="mdi:head-lightbulb-outline"
 								size="1.33em"
 							/> Innovator
 						</Pill>
